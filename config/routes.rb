@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   # send this request to the Pages controller's home action
   get 'messages' => 'messages#index'
+  get 'messages/new' => 'messages#new'
+  post 'messages' => 'messages#create'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
